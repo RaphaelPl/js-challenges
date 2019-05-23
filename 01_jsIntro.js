@@ -10,11 +10,16 @@
 // Run 'mocha 01_jsIntro.js' to test
 // (you'll have to have mocha installed globally)
 
+<<<<<<< HEAD
+=======
+// Define global variables here
+>>>>>>> 02_largestNumber
 const myString = "my string";
 var numbers = 7;
 
 function setNumbers(num) {
   // Your code here
+  numbers = num;
 }
 var assert = require("assert");
 
