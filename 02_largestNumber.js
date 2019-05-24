@@ -9,14 +9,14 @@ mocha 02_largestNumber.js
 Question: Why does the test pass for the third (last) test 
 with no changes to the function?
 */
+// due to the function returning null if the array is empty
 
-// helper method -->
 
 function largestNumber(array) {
   let largest = 0;
   if (array.length < 1) {
     return null;
-} else {
+  } else {
     for (let i = 0; i < array.length; i++) {
       if (array[i] > largest) {
         largest = array[i];
@@ -25,6 +25,17 @@ function largestNumber(array) {
   }
   return largest;
 }
+
+
+// function largestNumber(array) {
+//   let greatest = 0
+//   if (array != null && array.length > 0 && array.filter) {
+//     greatest = Math.max(...array.filter(item => item.typeof === 'number'));
+//   } else {
+//     return null;
+//   }
+//   return greatest
+// }
 
 // create a recursive function that will perform the follow
 // compare element 0 with element -1 and splice which ever
