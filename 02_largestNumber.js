@@ -11,7 +11,6 @@ with no changes to the function?
 */
 // due to the function returning null if the array is empty
 
-
 function largestNumber(array) {
   let largest = 0;
   if (array.length < 1) {
@@ -26,18 +25,23 @@ function largestNumber(array) {
   return largest;
 }
 
-
-// function largestNumber(array) {
-//   let greatest = 0
-//   if (array != null && array.length > 0 && array.filter) {
-//     greatest = Math.max(...array.filter(item => item.typeof === 'number'));
-//   } else {
-//     return null;
+// function numericTest(array) {
+//   var filterArray = []
+//   if (array != null && array.length > 0) {
+//     array.filter(array => array != NaN)
+//     filterArray = array
 //   }
-//   return greatest
+//   return filterArray
 // }
 
+<<<<<<< HEAD
 // function largestNumber(array)
+=======
+// let testarray = [1, 2, 3, 4];
+numericTest(testarray);
+
+
+>>>>>>> 02_largestNumber
 
 var assert = require("assert");
 
