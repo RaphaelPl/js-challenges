@@ -11,7 +11,6 @@ with no changes to the function?
 */
 // due to the function returning null if the array is empty
 
-
 function largestNumber(array) {
   let largest = 0;
   if (array.length < 1) {
@@ -26,21 +25,17 @@ function largestNumber(array) {
   return largest;
 }
 
+// function numericTest(array) {
+//   var filterArray = []
+//   if (array != null && array.length > 0) {
+//     array.filter(array => array != NaN)
+//     filterArray = array
+//   }
+//   return filterArray
+// }
 
-function largestNumber(array) {
-  let greatest = 0
-  if (array != null && array.length > 0 && array.filter) {
-    greatest = Math.max(...array.filter(item => item.typeof === 'number'));
-  } else {
-    return null;
-  }
-  return greatest
-}
-
-// create a recursive function that will perform the follow
-// compare element 0 with element -1 and splice which ever
-
-// function largestNumber(array)
+// let testarray = [1, 2, 3, 4];
+numericTest(testarray);
 
 
 
