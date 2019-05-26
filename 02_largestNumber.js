@@ -37,9 +37,6 @@ function largestNumber(array) {
 //   return greatest
 // }
 
-// create a recursive function that will perform the follow
-// compare element 0 with element -1 and splice which ever
-
 // function largestNumber(array)
 
 var assert = require("assert");
